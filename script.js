@@ -1,8 +1,14 @@
 function printResult() {
-  const input1 = prompt('Enter number');
-  const input2 = prompt('Enter another number');
+  const input1 = prompt('Enter number').trim();
 
-  if (isInvalidInput(input1) || isInvalidInput(input2)) {
+  if (isInvalidInput(input1)) {
+    console.log('Некорректный ввод!');
+    return;
+  }
+
+  const input2 = prompt('Enter another number').trim();
+
+  if (isInvalidInput(input2)) {
     console.log('Некорректный ввод!');
     return;
   }
@@ -11,8 +17,9 @@ function printResult() {
   const number2 = Number(input2);
 
   if (isNumber(number1) && isNumber(number2)) {
-    const result = number1.toString(number2);
-    console.log(result);
+    const sum = number1 + number2;
+    const division = number1 / number2;
+    console.log(`Ответ: ${sum}, ${division}`);
   }
 }
 
