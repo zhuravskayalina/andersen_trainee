@@ -25,5 +25,3 @@ function makeObjectDeepCopy(obj) {
 function isObject(obj) {
   return typeof obj === 'object';
 }
-
-makeObjectDeepCopy('');
