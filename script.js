@@ -1,6 +1,6 @@
 function printResult() {
-  const input1 = prompt('Enter number');
-  const input2 = prompt('Enter another number');
+  const input1 = prompt('Enter number').trim();
+  const input2 = prompt('Enter another number').trim();
 
   if (isInvalidInput(input1) || isInvalidInput(input2)) {
     console.log('Некорректный ввод!');
