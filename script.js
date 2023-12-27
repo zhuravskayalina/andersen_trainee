@@ -19,6 +19,7 @@ function printResult() {
   if (isNumber(number1) && isNumber(number2)) {
     const sum = number1 + number2;
     const division = number1 / number2;
+
     console.log(`Ответ: ${sum}, ${division}`);
   }
 }
