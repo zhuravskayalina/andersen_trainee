@@ -1,8 +1,4 @@
 function makeObjectDeepCopy(obj) {
-  if (!obj) {
-    return;
-  }
-
   if (Array.isArray(obj)) {
     const newArray = [];
 
@@ -80,7 +76,7 @@ const iterableObj = {
 };
 
 function isObject(obj) {
-  return typeof obj === 'object';
+  return obj !== null && typeof obj === 'object';
 }
 
 function isArrayFromNumbers(array) {
