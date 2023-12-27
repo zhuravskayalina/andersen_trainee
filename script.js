@@ -3,8 +3,7 @@ function printResult() {
   const input2 = prompt('Enter another number').trim();
 
   if (isInvalidInput(input1) || isInvalidInput(input2)) {
-    console.log('Некорректный ввод!');
-    return;
+    return console.log('Некорректный ввод!');
   }
 
   const number1 = Number(input1);
