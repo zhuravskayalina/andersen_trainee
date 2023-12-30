@@ -7,7 +7,8 @@ function makeObjectDeepCopy(obj) {
     }
 
     return newArray;
-  } else if (isObject(obj)) {
+  }
+  if (isObject(obj)) {
     const newObj = {};
 
     for (const [key, value] of Object.entries(obj)) {
@@ -15,9 +16,9 @@ function makeObjectDeepCopy(obj) {
     }
 
     return newObj;
-  } else {
-    return obj;
   }
+  return obj;
+
 }
 
 function selectFromInterval(array, start, end) {
@@ -67,9 +68,8 @@ const iterableObj = {
       next: () => {
         if (currentEl <= this.to) {
           return { value: currentEl++, done: false };
-        } else {
-          return { done: true };
         }
+        return { done: true };
       }
     };
   }
@@ -80,7 +80,7 @@ function isObject(obj) {
 }
 
 function isArrayFromNumbers(array) {
-  return array.every((item) => typeof item === 'number');
+  return array.every(isNumber);
 }
 
 function isNumber(value) {
