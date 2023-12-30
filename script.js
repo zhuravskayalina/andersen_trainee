@@ -12,8 +12,9 @@ Array.prototype.myFilter = function(callback) {
   return filtered;
 };
 
-function createDebounceFunction(callback, debounceTime) {
+function createDebounceFunction(callback, debounceTime = 0) {
   let timerId;
+  console.log(debounceTime);
 
   return function() {
     clearTimeout(timerId);
