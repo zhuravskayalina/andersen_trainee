@@ -78,4 +78,4 @@ function isNumber(value) {
   return typeof value === 'number' && !isNaN(value);
 }
 
-module.exports = {Stack};
+module.exports = { Stack };
