@@ -147,22 +147,22 @@ operationButtons.forEach(button => {
   });
 });
 
-resultButton.addEventListener('click', (button) => {
+resultButton.addEventListener('click', () => {
   calculator.calculate();
   calculator.updateDisplay();
 });
 
-clearButton.addEventListener('click', (button) => {
+clearButton.addEventListener('click', () => {
   calculator.clear();
   calculator.updateDisplay();
 });
 
-deleteButton.addEventListener('click', (button) => {
+deleteButton.addEventListener('click', () => {
   calculator.delete();
   calculator.updateDisplay();
 });
 
-toggleSignButton.addEventListener('click', (button) => {
+toggleSignButton.addEventListener('click', () => {
   calculator.toggleSign();
   calculator.updateDisplay();
 });
