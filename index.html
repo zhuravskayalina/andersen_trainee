@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Homework</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Homework</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
+<div class="calculator">
+  <div class="output">
+    <div data-previous-operand class="previous-operand"></div>
+    <div data-current-operand class="current-operand"></div>
+  </div>
+  <button class="button clear span-two">C</button>
+  <button class="button delete">DEL</button>
+  <button class="button operation" data-value="÷">÷</button>
+  <button class="button number" data-value="7">7</button>
+  <button class="button number" data-value="8">8</button>
+  <button class="button number" data-value="9">9</button>
+  <button class="button operation" data-value="*">*</button>
+  <button class="button number" data-value="4">4</button>
+  <button class="button number" data-value="5">5</button>
+  <button class="button number" data-value="6">6</button>
+  <button class="button operation" data-value="+">+</button>
+  <button class="button number" data-value="1">1</button>
+  <button class="button number" data-value="2">2</button>
+  <button class="button number" data-value="3">3</button>
+  <button class="button operation" data-value="-">-</button>
+  <button class="button number" data-value=".">.</button>
+  <button class="button number" data-value="0">0</button>
+  <button class="button toggle-sign">+/-</button>
+  <button class="button result">=</button>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
